@@ -1,0 +1,10 @@
+<button 
+  class="btn btn-warning"
+  (click)="onButtonClicked()">Display Details</button>
+<p [hidden]="!isVisible"> Prendi il cazzo</p>
+<div 
+  *ngFor="let log of logs"
+  [ngStyle]="{ backgroundColor: number > 5 ? 'blue' : 'transparent'}"
+  [ngClass]="{quinto: number > 5 }"
+  > {{ log }}
+</div>
